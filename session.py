@@ -1,4 +1,7 @@
 class SessionHelper:
+    """
+    subsidiaring class for opening startpage and login
+    """
 
     def __init__(self, app):
         self.app = app

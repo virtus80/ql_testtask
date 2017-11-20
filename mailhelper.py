@@ -2,6 +2,9 @@ from selenium.webdriver.common.keys import Keys
 
 
 class MailHelper:
+    """
+    subsidiary class for executing operations with email
+    """
 
     def __init__(self, app):
         self.app = app

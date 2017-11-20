@@ -4,6 +4,9 @@ from mailhelper import MailHelper
 
 
 class Application:
+    """
+    class for initialization and destroying WebDriver
+    """
 
     def __init__(self):
         self.wd = WebDriver()
