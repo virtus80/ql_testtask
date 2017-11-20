@@ -15,7 +15,7 @@ def test_send_message(app):
     app.mail.create_letter(Letter(address="virtus@quality-lab.ru", subject="Test letter", text="Hello!\nThis is testing "
     "letter for checking e-mail sending via Python.\nBest regards!"))
     assert app.mail.get_assertion_text() == "Ваше письмо отправлено. Перейти во Входящие"
-    app.session.logout()
+
 
 
 

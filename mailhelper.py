@@ -29,13 +29,11 @@ class MailHelper:
         wd.find_element_by_id("tinymce").click()
         wd.find_element_by_id("tinymce").clear()
         wd.find_element_by_id("tinymce").send_keys(text)
-        wd.find_element_by_id("tinymce").send_keys(Keys.CONTROL + Keys.ENTER)
         wd.switch_to.default_content()
 
     def send_letter(self):
         wd = self.app.wd
-        # wd.find_element_by_css_selector("span.b-toolbar__btn__text").click()
-        pass
+        wd.find_element_by_css_selector("body").send_keys(Keys.CONTROL + Keys.ENTER)
 
     def create_letter(self, letter):
         self.init_create_letter()

@@ -17,8 +17,3 @@ class SessionHelper:
     def open_home_page(self):
         wd = self.app.wd
         wd.get("https://mail.ru/")
-
-    def logout(self):
-        wd = self.app.wd
-        wd.find_element_by_id("PH_logoutLink").click()
-
